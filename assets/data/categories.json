@@ -1,0 +1,110 @@
+[
+  {
+  "id": 1,
+  "image": "assets/dummy/section_grocery.svg",
+  "name": "Бакалея",
+    "child": [
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "assets/dummy/water.svg",
+    "name": "Напитки",
+    "child": [
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "assets/dummy/vegetable.svg",
+    "name": "Овощи",
+    "child": [
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "assets/dummy/viburnum-fruit.svg",
+    "name": "Фрукты",
+    "child": [
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      },
+      {
+        "id": 11,
+        "image": "",
+        "name": "SubCat"
+      }
+    ]
+  }
+]
