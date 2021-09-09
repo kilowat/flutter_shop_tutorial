@@ -1,6 +1,6 @@
 import 'package:flippy/core/mixins/map_failure_massage.dart';
 import 'package:flippy/core/usecases/usecase.dart';
-import 'package:flippy/features/domain/usecases/get_all_category.dart';
+import 'package:flippy/features/domain/usecases/category/get_all_category.dart';
 import 'package:flippy/features/presentation/bloc/category/category_list_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

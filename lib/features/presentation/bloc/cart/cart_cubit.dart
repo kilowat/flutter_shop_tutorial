@@ -1,8 +1,8 @@
 import 'package:flippy/core/mixins/map_failure_massage.dart';
 import 'package:flippy/core/usecases/usecase.dart';
 import 'package:flippy/features/domain/entities/cart_entity.dart';
-import 'package:flippy/features/domain/usecases/add_to_cart.dart';
-import 'package:flippy/features/domain/usecases/get_cart.dart';
+import 'package:flippy/features/domain/usecases/cart/add_to_cart.dart';
+import 'package:flippy/features/domain/usecases/cart/get_cart.dart';
 import 'package:flippy/features/presentation/bloc/cart/cart_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,0 +1,100 @@
+[
+  {
+    "id":  1,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  99,
+    "category": 10
+  },
+  {
+    "id":  2,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  90,
+    "category": 10
+  },
+  {
+    "id":  3,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  4,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  5,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  6,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  7,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  8,
+    "name":  "Barilla Fusilli",
+    "image" : "assets/data/dummy/makarons.png",
+    "price":  89,
+    "category": 10
+  },
+  {
+    "id":  9,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  },
+  {
+    "id":  10,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  },
+  {
+    "id":  11,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  },
+  {
+    "id":  12,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  },
+  {
+    "id": 13,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  },
+  {
+    "id":  14,
+    "name":  "Крупа",
+    "image" : "assets/data/dummy/krups.jpg",
+    "price":  89,
+    "category": 11
+  }
+]

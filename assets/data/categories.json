@@ -5,25 +5,20 @@
   "name": "Бакалея",
     "child": [
       {
-        "id": 11,
+        "id": 10,
         "image": "",
-        "name": "SubCat"
+        "name": "Макароны"
       },
       {
         "id": 11,
         "image": "",
-        "name": "SubCat"
+        "name": "Крупы"
       },
       {
-        "id": 11,
+        "id": 12,
         "image": "",
-        "name": "SubCat"
+        "name": "Мука"
       },
-      {
-        "id": 11,
-        "image": "",
-        "name": "SubCat"
-      }
     ]
   },
   {
@@ -32,24 +27,24 @@
     "name": "Напитки",
     "child": [
       {
-        "id": 11,
+        "id": 20,
         "image": "",
-        "name": "SubCat"
+        "name": "Вода"
       },
       {
-        "id": 11,
+        "id": 21,
         "image": "",
-        "name": "SubCat"
+        "name": "Соки"
       },
       {
-        "id": 11,
+        "id": 22,
         "image": "",
-        "name": "SubCat"
+        "name": "Солод"
       },
       {
-        "id": 11,
+        "id": 23,
         "image": "",
-        "name": "SubCat"
+        "name": "Компоты"
       }
     ]
   },
@@ -59,24 +54,24 @@
     "name": "Овощи",
     "child": [
       {
-        "id": 11,
+        "id": 30,
         "image": "",
-        "name": "SubCat"
+        "name": "Помидоры"
       },
       {
-        "id": 11,
+        "id": 31,
         "image": "",
-        "name": "SubCat"
+        "name": "Огурцы"
       },
       {
-        "id": 11,
+        "id": 32,
         "image": "",
-        "name": "SubCat"
+        "name": "Капуста"
       },
       {
-        "id": 11,
+        "id": 33,
         "image": "",
-        "name": "SubCat"
+        "name": "Морковь"
       }
     ]
   },
@@ -86,24 +81,24 @@
     "name": "Фрукты",
     "child": [
       {
-        "id": 11,
+        "id": 40,
         "image": "",
-        "name": "SubCat"
+        "name": "Яблоки"
       },
       {
-        "id": 11,
+        "id": 41,
         "image": "",
-        "name": "SubCat"
+        "name": "Груши"
       },
       {
-        "id": 11,
+        "id": 42,
         "image": "",
-        "name": "SubCat"
+        "name": "Апелсины"
       },
       {
-        "id": 11,
+        "id": 43,
         "image": "",
-        "name": "SubCat"
+        "name": "Бананы"
       }
     ]
   }

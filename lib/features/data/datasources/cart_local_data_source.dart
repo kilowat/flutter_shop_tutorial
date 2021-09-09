@@ -24,6 +24,7 @@ class PreferencesCartDataSource implements CartLocalDataSource {
         name: "test",
         image: "test",
         price: 0.0,
+        category: 1,
       ),
     );
 

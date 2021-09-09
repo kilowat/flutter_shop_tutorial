@@ -37,6 +37,7 @@ class CartModel extends CartEntity {
                   name: e.product.name,
                   image: e.product.image,
                   price: e.product.price,
+                  category: 1,
                 ).toJson(),
               })
           .toList(),

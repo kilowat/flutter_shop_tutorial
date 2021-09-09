@@ -6,11 +6,13 @@ class ProductModel extends ProductEntity {
     required name,
     required image,
     required price,
+    required category,
   }) : super(
           id: id,
           name: name,
           image: image,
           price: price,
+          category: category,
         );
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
@@ -19,6 +21,7 @@ class ProductModel extends ProductEntity {
       name: json['name'],
       image: json['image'],
       price: json['price'],
+      category: json['category'],
     );
   }
   Map<String, dynamic> toJson() {
@@ -27,6 +30,7 @@ class ProductModel extends ProductEntity {
       'name': name,
       'image': image,
       'price': price,
+      'category': category,
     };
   }
 }
