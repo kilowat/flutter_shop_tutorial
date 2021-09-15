@@ -1,14 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'body.dart';
-
-class CategoriesScreen extends StatelessWidget {
-  static const route = "/categories";
+class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Scaffold(
-      body: SafeArea(child: Body()),
+      body: Container(),
     );
   }
 }

@@ -2,8 +2,9 @@ import 'dart:convert';
 
 import 'package:flippy/common/cart.dart';
 import 'package:flippy/features/data/models/cart_model.dart';
+import 'package:flippy/features/data/models/product_model.dart';
 import 'package:flippy/features/domain/entities/cart_entity.dart';
-import 'package:flippy/features/domain/entities/product_entity.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class CartLocalDataSource {
@@ -18,14 +19,14 @@ class PreferencesCartDataSource implements CartLocalDataSource {
   @override
   Future<CartModel> addToCart(int id) async {
     final Cart cart = await _restoreCart();
+    final jsonString = await rootBundle.loadString('assets/data/products.json');
+    final jsonObject = json.decode(jsonString) as List;
+    final product = jsonObject
+        .map((json) => ProductModel.fromJson(json))
+        .toList()
+        .firstWhere((element) => element.id == id);
     cart.addToCart(
-      productEntity: ProductEntity(
-        id: id,
-        name: "test",
-        image: "test",
-        price: 0.0,
-        category: 1,
-      ),
+      productEntity: product,
     );
 
     final cartModel = CartModel(

@@ -24,7 +24,7 @@ class Cart {
     if (_cartEntity.products.length > 0) {
       final index = _cartEntity.products
           .indexWhere((element) => element.product.id == productEntity.id);
-      _cartEntity.products[index].quantity += quantity;
+
       if (index == -1) {
         var cloneItems = <CartItemEntity>[]..addAll(_cartEntity.products);
         cloneItems.sort((a, b) => a.cartId.compareTo(b.cartId));
@@ -34,6 +34,8 @@ class Cart {
           product: productEntity,
           quantity: quantity,
         ));
+      } else {
+        _cartEntity.products[index].quantity += quantity;
       }
     } else {
       _cartEntity.products.add(CartItemEntity(

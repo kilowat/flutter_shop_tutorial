@@ -1,100 +1,88 @@
+import 'package:flippy/features/domain/entities/product_entity.dart';
+import 'package:flippy/features/presentation/bloc/product/product_list_cubit.dart';
+import 'package:flippy/features/presentation/bloc/product/product_list_state.dart';
 import 'package:flippy/features/presentation/widgets/product_item.dart';
 import 'package:flippy/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'view_all.dart';
 
 class BestSellersTop extends StatelessWidget {
-  final items = <ProductItem>[
-    ProductItem(
-      id: 0,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 1,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 2,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 3,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-    ),
-    ProductItem(
-      id: 4,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-    ),
-  ];
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ViewAll(title: S.of(context).BEST_SELLER, route: ""),
-        _ProductTop(items: items),
-      ],
+    return BlocBuilder<ProductListCubit, ProductListState>(
+      builder: (context, state) {
+        if (state is ProductListLoadedState) {
+          return Column(
+            children: [
+              ViewAll(title: S.of(context).BEST_SELLER, route: ""),
+              _ProductTop(
+                items: _buildItems(
+                  state.productList,
+                ),
+              ),
+            ],
+          );
+        } else {
+          return Container();
+        }
+      },
     );
+  }
+
+  List<ProductItem> _buildItems(List<ProductEntity> productList) {
+    return productList
+        .map(
+          (product) => ProductItem(
+            id: product.id,
+            image: product.image,
+            name: product.name,
+            price: product.price,
+            category: product.category,
+          ),
+        )
+        .take(6)
+        .toList();
   }
 }
 
 class FruitsTop extends StatelessWidget {
-  final items = <ProductItem>[
-    ProductItem(
-      id: 0,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 1,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 2,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-      weight: 1,
-    ),
-    ProductItem(
-      id: 3,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-    ),
-    ProductItem(
-      id: 4,
-      image: "assets/dummy/cabage.png",
-      name: "Mushrooms",
-      price: 100.0,
-    ),
-  ];
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ViewAll(title: "Fruits", route: ""),
-        _ProductTop(items: items),
-      ],
+    return BlocBuilder<ProductListCubit, ProductListState>(
+      builder: (context, state) {
+        if (state is ProductListLoadedState) {
+          return Column(
+            children: [
+              ViewAll(title: "Фрукты", route: ""),
+              _ProductTop(
+                items: _buildItems(
+                  state.productList,
+                ),
+              ),
+            ],
+          );
+        } else {
+          return Container();
+        }
+      },
     );
+  }
+
+  List<ProductItem> _buildItems(List<ProductEntity> productList) {
+    return productList
+        .map(
+          (product) => ProductItem(
+            id: product.id,
+            image: product.image,
+            name: product.name,
+            price: product.price,
+            category: product.category,
+          ),
+        )
+        .where((element) => element.category == 4)
+        .toList();
   }
 }
 

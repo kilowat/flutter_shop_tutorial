@@ -2,99 +2,127 @@
   {
     "id":  1,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  99,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  99.0,
+    "category": 1
   },
   {
     "id":  2,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  90,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  90.0,
+    "category": 1
   },
   {
     "id":  3,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  4,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  5,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  6,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  7,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  8,
     "name":  "Barilla Fusilli",
-    "image" : "assets/data/dummy/makarons.png",
-    "price":  89,
-    "category": 10
+    "image" : "assets/dummy/makarons.png",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  9,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  10,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  11,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  12,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id": 13,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
   },
   {
     "id":  14,
     "name":  "Крупа",
-    "image" : "assets/data/dummy/krups.jpg",
-    "price":  89,
-    "category": 11
+    "image" : "assets/dummy/krups.jpg",
+    "price":  89.0,
+    "category": 1
+  },
+  {
+    "id":  15,
+    "name":  "Яблоко",
+    "image" : "assets/dummy/apple.jpg",
+    "price":  89.0,
+    "category": 4
+  },
+  {
+    "id":  16,
+    "name":  "Груша",
+    "image" : "assets/dummy/apple.jpg",
+    "price":  89.0,
+    "category": 4
+  },
+  {
+    "id": 17,
+    "name":  "Апелсин",
+    "image" : "assets/dummy/apple.jpg",
+    "price":  89.0,
+    "category": 4
+  },
+  {
+    "id":  18,
+    "name":  "Лимон",
+    "image" : "assets/dummy/apple.jpg",
+    "price":  89.0,
+    "category": 4
   }
 ]

@@ -5,26 +5,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ProductList extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(top: Styles.paddingDefault / 2),
-      child: ListView(
-        children: [
-          ProductItem(),
-          ProductItem(),
-          ProductItem(),
-          ProductItem(),
-          ProductItem(),
-          ProductItem(),
-        ],
-      ),
-    );
-  }
-}
-
 class ProductItem extends StatelessWidget {
+  final int id;
+  final String name;
+  final double price;
+  final String image;
+
+  const ProductItem({
+    Key? key,
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.image,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return LimitedBox(
@@ -51,7 +44,7 @@ class ProductItem extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 1,
-              child: Placeholder(),
+              child: Image.asset(image),
             ),
             SizedBox(
               width: 12,
@@ -62,7 +55,7 @@ class ProductItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Name product",
+                    name,
                     style: TextStyle(fontSize: 16),
                   ),
                   RichText(
@@ -73,7 +66,7 @@ class ProductItem extends StatelessWidget {
                           style: TextStyle(color: Colors.black, fontSize: 11),
                         ),
                         TextSpan(
-                          text: "Rs. 1400.00",
+                          text: "Rs. $price",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 11,

@@ -1,6 +1,9 @@
 import 'package:flippy/common/styles.dart';
+import 'package:flippy/features/presentation/bloc/cart/cart_cubit.dart';
+import 'package:flippy/features/presentation/bloc/cart/cart_state.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ProductItem extends StatelessWidget {
@@ -9,6 +12,7 @@ class ProductItem extends StatelessWidget {
   final String name;
   final double price;
   final double weight;
+  final int category;
 
   const ProductItem({
     Key? key,
@@ -16,6 +20,7 @@ class ProductItem extends StatelessWidget {
     required this.image,
     required this.name,
     required this.price,
+    required this.category,
     this.weight = 0,
   }) : super(key: key);
   @override
@@ -59,7 +64,7 @@ class ProductItem extends StatelessWidget {
             right: 8,
           ),
           child: Text(
-            "Mushrooms",
+            name,
             style: TextStyle(
               fontSize: 12,
             ),
@@ -73,19 +78,28 @@ class ProductItem extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                "\$100",
+                "\$${price}",
                 style: TextStyle(
                   fontSize: 18,
                 ),
               ),
               Spacer(),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(0, 22),
-                  primary: Styles.colorPrimary,
-                ),
-                onPressed: () {},
-                child: Text("add"),
+              BlocBuilder<CartCubit, CartState>(
+                builder: (context, state) {
+                  return ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(0, 24),
+                      primary: Styles.colorPrimary,
+                    ),
+                    onPressed: () {
+                      context.read<CartCubit>().add(id);
+                    },
+                    child: Icon(
+                      Icons.add_shopping_cart,
+                      size: 20,
+                    ),
+                  );
+                },
               ),
             ],
           ),

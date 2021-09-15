@@ -10,19 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'view_all.dart';
 
-class Categories extends StatefulWidget {
-  @override
-  _CategoriesState createState() => _CategoriesState();
-}
-
-class _CategoriesState extends State<Categories> {
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    context.read<CategoryListCubit>().load();
-  }
-
+class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
